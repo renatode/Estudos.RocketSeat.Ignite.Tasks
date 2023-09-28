@@ -1,9 +1,11 @@
-import './App.css'
+import { MainHeader } from './components/MainHeader';
+
+import styles from './App.module.css'
 
 export function App() {
   return (
     <>
-      <p>teste</p>
+      <MainHeader />
     </>
   )
 }
