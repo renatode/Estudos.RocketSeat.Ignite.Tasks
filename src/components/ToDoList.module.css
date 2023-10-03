@@ -1,0 +1,137 @@
+.toDoListWapper {
+    margin-top: calc(4.0rem - 1.75rem);
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .toDoListWapper {
+        width: 80%;
+    }
+}
+
+.toDoListWapper header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-self: stretch;
+}
+
+.toDoListWapper header label {
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.toDoListWapper header .criadas {
+    color: var(--blue);
+}
+
+.toDoListWapper header .concluidas {
+    color: var(--purple);
+}
+
+.toDoListWapper header .contador {
+    padding: 0.125rem 0.5rem;
+    gap: 0.625rem;
+    border-radius: 62.4375rem;
+    margin-left: 0.5rem;
+    background: var(--gray-400);
+    color: var(--gray-200, #D9D9D9);
+    font-family: Inter;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.toDoListWapper .emptyTaskList {
+    display: flex;
+    padding: 4rem 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    width: 100%;
+    border-radius: 0.5rem;
+    border-top: 1px solid var(--gray-400);
+}
+
+@media (max-width: 768px) {
+    .toDoListWapper .emptyTaskList {
+        padding: 3rem 0.5rem;
+    }
+}
+
+.toDoListWapper .emptyTaskList img {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.toDoListWapper .emptyTaskList p {
+    color: var(--gray-300);
+    text-align: center;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.4rem;
+}
+
+.toDoListWapper .emptyTaskList .textAlt {
+    font-weight: 400;
+}
+
+.toDoListWapper .taskList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    align-self: stretch;
+}
+
+.toDoListWapper .taskList div {
+    display: flex;
+    padding: 1rem;
+    align-items: flex-start;
+    gap: 0.75rem;
+    align-self: stretch;
+    border-radius: 0.5rem;
+    border: 1px solid var(--gray-400);
+    background: var(--gray-500);
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+}
+
+.toDoListWapper .taskList div p {
+    flex: 1 0 0;
+    color: var(--gray-100);
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4rem;
+}
+
+.toDoListWapper .taskList .checkIcon:hover {
+    stroke: var(--bluedark);
+}
+
+.toDoListWapper .taskList .trashIcon:hover {
+    stroke: var(--danger);
+}
+
+.toDoListWapper .taskList .concluida p {
+    color: var(--gray-300);
+    text-decoration-line: line-through;
+}
+
+.toDoListWapper .taskList .doneIcon:hover path:not(:last-of-type) {
+    fill: var(--purple);
+}

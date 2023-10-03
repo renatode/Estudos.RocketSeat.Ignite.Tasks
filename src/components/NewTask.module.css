@@ -8,6 +8,12 @@
     top: -1.75rem;
 }
 
+@media (max-width: 768px) {
+    .newTaskWapper {
+        width: 80%;
+    }
+}
+
 .newTaskWapper input::placeholder {
     color: var(--gray-300);
 }
