@@ -55,14 +55,14 @@ export function ToDoList({ taskList, onToggleTaskCompletion, onDeleteTaskComplet
                 return (
                     <div className={styles.task} key={task.id}>
                         <div>
-                            <button onClick={handleTaskCompletion} className={styles.btnteste} id={task.id} title="Tarefa concluída?">
+                            <button onClick={handleTaskCompletion} id={task.id} title="Tarefa concluída?">
                                 {task.isCompleted ?
                                     <DoneIcon className={styles.doneIcon} /> :
                                     <CheckIcon className={styles.checkIcon} />
                                 }
                             </button>
                             <p className={task.isCompleted ? styles.concluida : ""}>{task.name}</p>
-                            <button onClick={handleDeleteTask} className={styles.btntesteOk} id={task.id} title="Excluir Tarefa">
+                            <button onClick={handleDeleteTask} id={task.id} title="Excluir Tarefa">
                                 <TrashIcon className={styles.trashIcon} />
                             </button>
 

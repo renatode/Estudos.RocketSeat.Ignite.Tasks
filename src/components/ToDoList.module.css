@@ -124,18 +124,10 @@
     text-decoration-line: line-through;
 }
 
-.btntesteOk {
+.toDoListWapper .task div button {
     background: transparent;
     border: 0;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    border-radius: 2px;
-}
-
-.btnteste {
-    background: transparent;
-    border: 0;
     display: flex;
     align-items: center;
     border-radius: 2px;
