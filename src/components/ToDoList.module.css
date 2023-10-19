@@ -124,7 +124,7 @@
     text-decoration-line: line-through;
 }
 
-.toDoListWapper .task div button {
+.btntesteOk {
     background: transparent;
     border: 0;
     cursor: pointer;

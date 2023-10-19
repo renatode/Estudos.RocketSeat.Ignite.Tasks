@@ -62,7 +62,7 @@ export function ToDoList({ taskList, onToggleTaskCompletion, onDeleteTaskComplet
                                 }
                             </button>
                             <p className={task.isCompleted ? styles.concluida : ""}>{task.name}</p>
-                            <button onClick={handleDeleteTask} id={task.id} title="Excluir Tarefa">
+                            <button onClick={handleDeleteTask} className={styles.btntesteOk} id={task.id} title="Excluir Tarefa">
                                 <TrashIcon className={styles.trashIcon} />
                             </button>
 
